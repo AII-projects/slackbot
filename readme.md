@@ -23,7 +23,7 @@ The application is designed with a decoupled architecture to separate the fast-r
 
 ---
 
-## Technology Stack
+## Technology Stackk
 
 * **Backend:** Python 3
 * **Web Framework:** Flask
