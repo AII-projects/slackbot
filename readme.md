@@ -12,7 +12,7 @@ The application is designed with a decoupled architecture to separate the fast-r
 1.  A user **@mentions** the bot in a Slack channel.
 2.  Slack sends an **HTTP Webhook** to our public URL.
 3.  The **Flask Web Server** receives the request.
-    * It performs quick validation checks (file uploads, user's daily limit).
+    * It performs quick validation checks ( user's daily limit).
     * If checks pass, it places a "job" onto the **RabbitMQ Queue**.
     * It immediately responds `200 OK` to Slack.
 4.  A **Celery Worker** process, listening to the queue, picks up the job.
